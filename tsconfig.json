@@ -5,6 +5,13 @@
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
+    "patchs": {
+      "@app/*":[ "src/app*" ],
+        "@shared/*":["src/app/shared/*"],
+        "@environments/*":["src/environments/*"],
+        "@characters/*":["src/app/components/pages/characters*"],
+        "@pages/*":["src/app/components/pages*"],
+    },
     "strict": true,
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
